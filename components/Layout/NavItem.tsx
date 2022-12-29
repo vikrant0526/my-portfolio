@@ -6,7 +6,7 @@ type NavItemType = { children: ReactNode; href: string; active?: boolean };
 const NavItem: FC<NavItemType> = ({ children, href, active = false }) => {
   const linkStyle = useMemo(() => {
     const style = "text-lg flex flex-1 px-6 min-h-full items-center";
-    if (active) style + "underline underline-offset-2";
+    if (active) style + "decoration-black";
     return style;
   }, [active]);
   return (
