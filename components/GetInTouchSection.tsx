@@ -3,7 +3,7 @@ import Section from "./Section";
 
 const GetInTouchSection = () => {
   return (
-    <Section className="flex-row">
+    <Section className="flex-row py-16">
       <div>
         <h6 className="text-3xl">Wanna get in touch?</h6>
         {/* <Seprator /> */}

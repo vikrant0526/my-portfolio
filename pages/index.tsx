@@ -24,7 +24,7 @@ export default function Home() {
           alt="Vikrant Shah NextJS React React-Native NodeJS Developer Thumbs Up Memoji"
         />
       </Section>
-      <Section dark>
+      <Section dark className="py-20">
         <h3 className="text-7xl text-right">Who am I?</h3>
         <Seprator />
         <p className="mt-4 text-xl">
