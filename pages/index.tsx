@@ -2,6 +2,7 @@ import Image from "next/image";
 import { BsFillCloudDownloadFill } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa";
 import Button from "../components/Button";
+import GetInTouchSection from "../components/GetInTouchSection";
 import Section from "../components/Section";
 import Seprator from "../components/Seprator";
 
@@ -48,6 +49,7 @@ export default function Home() {
           Download <BsFillCloudDownloadFill size={24} className="button-icon" />
         </Button>
       </Section>
+      <GetInTouchSection />
     </>
   );
 }
