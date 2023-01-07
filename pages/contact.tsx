@@ -30,26 +30,26 @@ const contactLinks: Array<ContactLinkType> = [
     type: "WhatsApp",
     href: "https://wa.me/4915214778537",
     linkText: "+49 152 1477 8537",
-    icon: <FaWhatsapp size={24} className="contact-icon" />,
+    icon: <FaWhatsapp size={28} className="contact-icon" />,
   },
 ];
 
 const socialLinks: Array<ContactLinkType> = [
   {
     type: "LinkedIn",
-    icon: <FaLinkedin size={24} className="contact-icon" />,
+    icon: <FaLinkedin size={28} className="contact-icon" />,
     href: "https://www.linkedin.com/in/vikrant55/",
     linkText: "Vikrant Shah",
   },
   {
     type: "Instagram",
-    icon: <FaInstagram size={24} className="contact-icon" />,
+    icon: <FaInstagram size={28} className="contact-icon" />,
     href: "https://www.instagram.com/vikrant_5.5/",
     linkText: "vikrant_5.5",
   },
   {
     type: "Twitter",
-    icon: <FaTwitter size={24} className="contact-icon" />,
+    icon: <FaTwitter size={28} className="contact-icon" />,
     href: "https://twitter.com/vikrant_55",
     linkText: "vikrant_55",
   },
@@ -58,13 +58,13 @@ const socialLinks: Array<ContactLinkType> = [
 const nerdLinks: Array<ContactLinkType> = [
   {
     type: "GitHub",
-    icon: <FaGithub size={24} className="contact-icon" />,
+    icon: <FaGithub size={28} className="contact-icon" />,
     href: "https://github.com/vikrant0526",
     linkText: "vikrant0526",
   },
   {
     type: "Stackoverflow",
-    icon: <FaStackOverflow size={24} className="contact-icon" />,
+    icon: <FaStackOverflow size={28} className="contact-icon" />,
     href: "https://stackoverflow.com/users/15191315/vikrant-shah",
     linkText: "Vikrant Shah",
   },
