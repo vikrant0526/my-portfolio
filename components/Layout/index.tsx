@@ -20,7 +20,6 @@ type LayoutProps = {
 
 const Layout: FC<LayoutProps> = ({ children, dark = false }) => {
   const darkStyle = useDarkClass(dark);
-
   const currentYear = new Date().getFullYear();
   return (
     <>
