@@ -29,7 +29,7 @@
   }
 
   nav a {
-    @apply font-medium underline underline-offset-8 decoration-[1.5px] transition-all duration-200 ease-out decoration-transparent hover:decoration-black;
+    @apply font-medium underline underline-offset-8 decoration-[1.5px] transition-all duration-200 ease-out decoration-transparent hover:decoration-black dark:hover:decoration-emerald-50;
   }
 
   .button {
@@ -47,5 +47,9 @@
   svg,
   path {
     @apply bg-transparent dark:bg-transparent;
+  }
+
+  .icon-link {
+    @apply mx-4 hover:scale-125 hover:rotate-3;
   }
 }

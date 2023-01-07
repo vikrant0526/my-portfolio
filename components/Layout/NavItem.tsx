@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { FC, ReactNode, useMemo } from "react";
-
-type NavItemType = { children: ReactNode; href: string; active?: boolean };
+import { FC, useMemo } from "react";
+import { NavItemType } from "../../types/Layout";
 
 const NavItem: FC<NavItemType> = ({ children, href, active = false }) => {
   const linkStyle = useMemo(() => {
