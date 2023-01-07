@@ -52,4 +52,8 @@
   .icon-link {
     @apply mx-4 hover:scale-125 hover:rotate-3;
   }
+
+  .contact-icon {
+    @apply inline-block mx-1 rotate-12;
+  }
 }

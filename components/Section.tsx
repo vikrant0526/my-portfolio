@@ -16,7 +16,7 @@ const Section: FC<SectionProps> = ({ children, dark = false, atTop = false, clas
   }, [atTop]);
 
   return (
-    <section className={`border-emerald-50 border-t ${darkStyle} ${atTopSectionStyle}`}>
+    <section className={`border-emerald-50 border-b ${darkStyle} ${atTopSectionStyle}`}>
       <div>
         <div className={`section-div ${atTopDivStyle} ${className}`}>{children}</div>
       </div>

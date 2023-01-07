@@ -1,32 +1,28 @@
-import Image from "next/image";
 import { BsFillCloudDownloadFill } from "react-icons/bs";
-import { FaDownload } from "react-icons/fa";
 import Button from "../components/Button";
 import GetInTouchSection from "../components/GetInTouchSection";
+import PageTitle from "../components/PageTitle";
 import Section from "../components/Section";
-import Seprator from "../components/Seprator";
+import SectionTitle from "../components/SectionTitle";
 
 export default function Home() {
   return (
     <>
       <Section atTop className="items-center flex-row">
-        <div>
-          <p className="text-6xl">Hey! I&apos;m</p>
-          <h1 className="text-9xl font-semibold">Vikrant Shah</h1>
-          <p className="text-xl">
-            Thanks for visiting my personal portfolio. Get to know me, get to know my work.
-          </p>
-        </div>
-        <Image
-          src={"/vikrant-shah-peace-sign-memoji.png"}
-          height={175}
-          width={175}
-          alt="Vikrant Shah NextJS React React-Native NodeJS Developer Thumbs Up Memoji"
+        <PageTitle
+          titleBegin="Hey! I'm"
+          titleMain="Vikrant Shah"
+          subtitle="Thanks for visiting my personal portfolio. Get to know me, get to know my work."
+          memoji={{
+            src: "/vikrant-shah-peace-sign-memoji.png",
+            height: 175,
+            width: 175,
+            alt: "Vikrant Shah NextJS React React-Native NodeJS Developer Thumbs Up Memoji",
+          }}
         />
       </Section>
       <Section dark className="py-20">
-        <h3 className="text-7xl text-right">Who am I?</h3>
-        <Seprator />
+        <SectionTitle title="Who am I?" />
         <p className="mt-4 text-xl">
           Hey there!🖐️ I&apos;m a software engineer 💻 from the land of spicy food 🌶️ and Bollywood
           🎥, currently residing in the land of bratwurst 🌭 and beer 🍺, Germany. When I&apos;m not

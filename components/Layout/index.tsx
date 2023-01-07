@@ -1,10 +1,17 @@
-import { FC, ReactNode, useMemo } from "react";
+import { FC, ReactNode } from "react";
 import { FaGithub, FaInstagram, FaLinkedin, FaStackOverflow, FaTwitter } from "react-icons/fa";
 import useDarkClass from "../../hooks/useDarkClass";
 import { NavLinksType } from "../../types/Layout";
 import FooterNav from "./FooterNav";
 import Logo from "./Logo";
 import Nav from "./Nav";
+
+const navLikns: Array<NavLinksType> = [
+  { title: "Home", href: "/" },
+  { title: "About", href: "/about" },
+  { title: "Projects", href: "/projects" },
+  { title: "Contact", href: "/contact" },
+];
 
 type LayoutProps = {
   children: ReactNode;
@@ -13,15 +20,7 @@ type LayoutProps = {
 
 const Layout: FC<LayoutProps> = ({ children, dark = false }) => {
   const darkStyle = useDarkClass(dark);
-  const navLikns: NavLinksType[] = useMemo(
-    () => [
-      { title: "Home", href: "/" },
-      { title: "About", href: "/about" },
-      { title: "Projects", href: "/projects" },
-      { title: "Contact", href: "/contact" },
-    ],
-    []
-  );
+
   const currentYear = new Date().getFullYear();
   return (
     <>
@@ -45,7 +44,7 @@ const Layout: FC<LayoutProps> = ({ children, dark = false }) => {
               </div>
             </div>
           </div>
-          <p>Copyright &copy; {currentYear} Vikrant Shah</p>
+          <p className="text-sm mt-2">Copyright &copy; {currentYear} Vikrant Shah</p>
         </div>
       </footer>
     </>
