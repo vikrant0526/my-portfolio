@@ -19,7 +19,12 @@ const FooterNav: FC<FooterNavProps> = ({ navLinks }) => {
           </FooterNavItem>
         ))}
       </div>
-      <a href="https://github.com/vikrant0526/my-portfolio" className="flex items-center  mt-2">
+      <a
+        href="https://github.com/vikrant0526/my-portfolio"
+        target="_blank"
+        rel="noreferrer"
+        className="flex items-center mt-2"
+      >
         Checkout this project on <FaGithub size={24} className="ml-2" />
       </a>
     </nav>

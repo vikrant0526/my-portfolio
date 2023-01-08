@@ -86,7 +86,7 @@ const Contact = () => {
           }}
         />
       </Section>
-      <Section dark className="py-20">
+      <Section dark className="py-20" id="contact-info">
         <SectionTitle title="Here's how" />
         <div className="flex flex-1">
           <div className="flex flex-1 flex-col">

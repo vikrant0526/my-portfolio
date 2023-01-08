@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./Button";
 import Section from "./Section";
 
@@ -12,7 +13,9 @@ const GetInTouchSection = () => {
         </p>
       </div>
       <div className="flex flex-1 justify-end items-center">
-        <Button className="min-w-max">Get in Touch</Button>
+        <Link href="/contact/#contact-info">
+          <Button className="min-w-max">Get in Touch</Button>
+        </Link>
       </div>
     </Section>
   );

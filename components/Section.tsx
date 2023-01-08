@@ -6,9 +6,16 @@ type SectionProps = {
   dark?: boolean;
   atTop?: boolean;
   className?: string;
+  id?: string;
 };
 
-const Section: FC<SectionProps> = ({ children, dark = false, atTop = false, className = "" }) => {
+const Section: FC<SectionProps> = ({
+  children,
+  dark = false,
+  atTop = false,
+  className = "",
+  id = "",
+}) => {
   const darkStyle = useDarkClass(dark);
   const [atTopSectionStyle, atTopDivStyle] = useMemo(() => {
     if (atTop) return ["pt-36", "full-section"];
@@ -16,7 +23,7 @@ const Section: FC<SectionProps> = ({ children, dark = false, atTop = false, clas
   }, [atTop]);
 
   return (
-    <section className={`border-emerald-50 border-b ${darkStyle} ${atTopSectionStyle}`}>
+    <section className={`border-emerald-50 border-b ${darkStyle} ${atTopSectionStyle}`} id={id}>
       <div>
         <div className={`section-div ${atTopDivStyle} ${className}`}>{children}</div>
       </div>

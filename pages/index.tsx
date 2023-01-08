@@ -41,9 +41,11 @@ export default function Home() {
         <p className="mt-4 text-xl">
           Well if you wanna have it in short and simple you can download my Resumè here.
         </p>
-        <Button className="mt-4">
-          Download <BsFillCloudDownloadFill size={24} className="button-icon" />
-        </Button>
+        <a href="/vikrant-shah-resume.pdf" download className="mt-4">
+          <Button>
+            Download <BsFillCloudDownloadFill size={24} className="button-icon" />
+          </Button>
+        </a>
       </Section>
       <GetInTouchSection />
     </>
